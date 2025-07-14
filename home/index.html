@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="TK Victoria Montessori School adalah taman kanak-kanak di Tangerang tepatnya Modernland dengan metode belajar menyenangkan dan kreatif untuk anak usia dini"
+    />
+    <meta
+      name="keywords"
+      content="TK, Taman Kanak-kanak, Tangerang, Modernland, Sekolah Anak, TK Victoria Montessori School"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TK Victoria Montessori School - Taman Kanak-kanak Tangerang</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="../assets/favicon/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="../assets/favicon/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../assets/favicon/apple-touch-icon.png"
+      sizes="96x96"
+      type="image/png"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-yellow-50 text-gray-800 w-full">
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full z-50 bg-blue-900 text-white shadow-md">
+      <nav
+        class="flex justify-between items-center px-6 md:px-12 py-4 md:py-6"
+        id="navbar"
+      >
+        <div class="flex items-center">
+          <a href="/home/">
+            <img
+              src="../assets/image/logo-victoria.webp"
+              class="h-16"
+              loading="lazy"
+              alt="Logo TK Victoria Montessori School"
+            />
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menuToggle" class="md:hidden focus:outline-none">
+          <svg
+            class="w-6 h-6 fill-current text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 6h16M4 12h16M4 18h16"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <!-- Desktop Menu -->
+        <div id="menu" class="hidden md:flex space-x-10 text-gray-900">
+          <a
+            href="/home/"
+            class="group relative inline-block text-white hover:text-yellow-400 transition duration-300"
+          >
+            <span
+              class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+              >Home</span
+            >
+          </a>
+
+          <a
+            href="/profil/"
+            class="group relative inline-block text-white hover:text-yellow-400 transition duration-300"
+          >
+            <span
+              class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+              >School Profile</span
+            >
+          </a>
+
+          <a
+            href="/kegiatan/"
+            class="group relative inline-block text-white hover:text-yellow-400 transition duration-300"
+          >
+            <span
+              class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+              >Activities</span
+            >
+          </a>
+
+          <a
+            href="/kontak/"
+            class="group relative inline-block text-white hover:text-yellow-400 transition duration-300"
+          >
+            <span
+              class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+              >Contact</span
+            >
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden flex-col bg-blue-900 text-white px-10 py-4 space-y-3 transition duration-300"
+      >
+        <a
+          href="/home/"
+          class="group relative block hover:text-yellow-400 transition duration-300"
+        >
+          <span
+            class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+          >
+            Home
+          </span>
+        </a>
+
+        <a
+          href="/profil/"
+          class="group relative block hover:text-yellow-400 transition duration-300"
+        >
+          <span
+            class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+          >
+            School Profile
+          </span>
+        </a>
+
+        <a
+          href="/kegiatan/"
+          class="group relative block hover:text-yellow-400 transition duration-300"
+        >
+          <span
+            class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+            >Activites</span
+          >
+        </a>
+
+        <a
+          href="/kontak/"
+          class="group relative block hover:text-yellow-400 transition duration-300"
+        >
+          <span
+            class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+          >
+            Contact
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-screen w-full flex justify-center items-center"
+      >
+        <!-- Gambar Background -->
+        <img
+          src="../assets/image/hero-tk_victoria.webp"
+          alt="TK Victoria Montessori School"
+          loading="lazy"
+          class="absolute inset-0 object-cover w-full h-full"
+        />
+
+        <!-- Overlay Warna agar teks lebih kontras -->
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-yellow-400/20"
+        ></div>
+
+        <!-- Teks di atas gambar -->
+        <div
+          class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-6"
+        >
+          <h2
+            class="text-3xl md:text-5xl font-semibold drop-shadow-lg"
+            data-aos="fade-down"
+          >
+            WELCOME TO TK VICTORIA MONTESSORI SCHOOL
+          </h2>
+          <p
+            class="mt-4 text-lg max-w-4xl leading-relaxed drop-shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            TK Victoria Montessori School is a kindergarten in Tangerang,
+            specifically in Modernland with a fun and creative learning method
+            for preschoolers.
+          </p>
+          <a
+            href="#"
+            class="mt-6 inline-block px-6 py-3 bg-yellow-400 text-blue-900 font-semibold rounded-lg shadow-lg hover:bg-yellow-300 transition duration-300"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <span>Learn More🎓</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section class="py-16 bg-yellow-50 text-gray-800">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+          <h2
+            class="text-3xl font-semibold mb-6 text-blue-800"
+            data-aos="fade-up"
+          >
+            Why Choose Us
+          </h2>
+          <p
+            class="mb-12 text-gray-600 max-w-3xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            TK Victoria Montessori School provides a fun, caring, and
+            educational environment to support early childhood development.
+          </p>
+
+          <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+            <!-- Point 1 -->
+            <div
+              class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="text-4xl text-yellow-400 mb-4">🎓</div>
+              <h3 class="text-lg font-semibold text-blue-800 mb-2">
+                Montessori Method
+              </h3>
+              <p class="text-sm text-gray-600">
+                Encouraging children to learn independently, creatively, and
+                with exploration.
+              </p>
+            </div>
+
+            <!-- Point 2 -->
+            <div
+              class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="text-4xl text-yellow-400 mb-4">👩‍🏫</div>
+              <h3 class="text-lg font-semibold text-blue-800 mb-2">
+                Experienced Teachers
+              </h3>
+              <p class="text-sm text-gray-600">
+                Friendly and professional teachers who care about each student.
+              </p>
+            </div>
+
+            <!-- Point 3 -->
+            <div
+              class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="text-4xl text-yellow-400 mb-4">🏫</div>
+              <h3 class="text-lg font-semibold text-blue-800 mb-2">
+                Safe & Comfortable
+              </h3>
+              <p class="text-sm text-gray-600">
+                A clean, safe, and child-friendly learning environment.
+              </p>
+            </div>
+
+            <!-- Point 4 -->
+            <div
+              class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="text-4xl text-yellow-400 mb-4">🎨</div>
+              <h3 class="text-lg font-semibold text-blue-800 mb-2">
+                Interactive Learning
+              </h3>
+              <p class="text-sm text-gray-600">
+                Fun activities through art, music, and hands-on experiments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="h-1 w-24 bg-yellow-400 mx-auto my-8 rounded-full"></div>
+
+      <!-- Testimonial Section -->
+      <section class="bg-blue-50 py-16 text-gray-800">
+        <h2
+          class="text-3xl font-semibold mb-6 text-blue-800 text-center"
+          data-aos="fade-up"
+        >
+          What Parents Say
+        </h2>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-6">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-right">
+            <p class="text-lg italic text-gray-700">
+              “Terima kasih untuk semua Miss atas dedikasi dan kesabaran nya dlm
+              mengajar dan membimbing Lionel dari PG sampai lulus TK B.. Sangat
+              berkesan sekali sekolah Victoria dari Onel cuma punya beberp teman
+              saja, sampai akhirnya bs bertambah banyak.. Semoga TK Victoria
+              semakin maju dan berkembang.. Sekali lagi terima kasih ya Miss
+              sudah perhatian bgt sama Onel🧡🥰”
+            </p>
+            <div class="mt-4 font-medium text-blue-800">— Ibu Nicke</div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <p class="text-lg italic text-gray-700">
+              “Sekali lagi terimakasih tuk miss miss yg sudah mendidik freya dan
+              teman teman dengan sangat baik dan sabar Walaupun freya hanya 6
+              bulan di victoria tapi jujur sangat sangat berkesan dan selalu
+              happy bersama teman teman dan miss miss di victoria Terimakasih
+              miss sampai jumpa lagi tuk miss miss victoria dan mami mami semua,
+              salam hangat dari saya☺️.”
+            </p>
+            <div class="mt-4 font-medium text-blue-800">— Ibu Novita</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="bg-blue-50 flex">
+        <div class="h-1 w-24 bg-yellow-400 mx-auto my-10 rounded-full"></div>
+      </div>
+
+      <!-- Gallery Section -->
+      <section class="py-16">
+        <h2 class="text-3xl font-semibold mb-6 text-blue-800 text-center">
+          School Gallery
+        </h2>
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6"
+        >
+          <!-- Item Gallery -->
+          <div
+            class="relative group overflow-hidden rounded-lg shadow-md"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="../assets/image/Kegiatan PORSENI di Ancol, Jakarta.webp"
+              alt="Anak-anak mengikuti PORSENI di Ancol"
+              class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-blue-900/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+            >
+              <span class="text-white font-semibold text-lg"
+                >PORSENI - Ancol</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="relative group overflow-hidden rounded-lg shadow-md"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="../assets/image/Fieldtrip ke Scientia Square Park - Gading Serpong.webp"
+              alt="Fieldtrip ke Scientia Square Park - Gading Serpong"
+              class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-blue-900/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+            >
+              <span class="text-white font-semibold text-lg"
+                >Fieldtrip - Scientia Square Park</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="relative group overflow-hidden rounded-lg shadow-md"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="../assets/image/Membaca membuka jendela dunia.webp"
+              alt="Membaca membuka jendela dunia"
+              class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-blue-900/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+            >
+              <span class="text-white font-semibold text-lg"
+                >Reading - Open the World</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="relative group overflow-hidden rounded-lg shadow-md"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="../assets/image/Edukasi alat transportasi umum - Kereta Api Poris - Bandara.webp"
+              alt="Edukasi alat transportasi umum - Kereta Api Poris - Bandara"
+              class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-blue-900/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+            >
+              <span class="text-white font-semibold text-lg"
+                >Public transportation education</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="relative group overflow-hidden rounded-lg shadow-md"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="../assets/image/Edukasi Biota Laut ke BXSEA Bintaro Tangsel.webp"
+              alt="Edukasi Biota Laut ke BXSEA Bintaro Tangerang Selatan"
+              class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-blue-900/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+            >
+              <span class="text-white font-semibold text-lg"
+                >Marine life education - BXSEA</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="relative group overflow-hidden rounded-lg shadow-md"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="../assets/image/Edukasi Profesi Polisi oleh Satuan Polres Metro Tangerang.webp"
+              alt="Edukasi Profesi Polisi oleh Satuan Polres Metro Tangerang"
+              class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-blue-900/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+            >
+              <span class="text-white font-semibold text-lg"
+                >Police profession education</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="h-1 w-24 bg-yellow-400 mx-auto my-8 rounded-full"></div>
+
+      <!-- Location Section -->
+      <section class="py-16 bg-gray-50">
+        <div class="md:px-0 px-5">
+          <h2 class="text-3xl font-semibold mb-6 text-blue-800 text-center">
+            Find Us
+          </h2>
+          <p class="text-center mb-8 text-gray-600">
+            Modernland, Tangerang — TK Victoria Montessori School
+          </p>
+        </div>
+        <div class="max-w-5xl mx-auto px-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4059.426251263835!2d106.63886367509527!3d-6.202584093785192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9381aaac5bb%3A0x690ffbf87fb05adc!2sVICTORIA%20Montessori%20School!5e1!3m2!1sid!2sid!4v1752216292526!5m2!1sid!2sid"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="rounded-lg shadow-md"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-blue-900 text-white py-10">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+        <!-- Logo & Address -->
+        <div>
+          <img
+            src="../assets/image/logo-victoria.webp"
+            alt="TK Victoria Logo"
+            class="h-12 mb-4"
+          />
+          <p class="text-sm leading-relaxed">
+            <strong>TK Victoria Montessori School</strong><br />
+            Ruko Modernland, Jl. Hartono Raya Blk. R No.2-3, RT.003/RW.001, Kec.
+            Kelapa Indah, Kota Tangerang, Banten 15117<br />
+            Indonesia
+          </p>
+        </div>
+
+        <!-- Contact Info & Social Media -->
+        <div>
+          <h3 class="font-semibold text-yellow-400 mb-3">Contact Us</h3>
+          <p class="text-sm mb-2 hover:text-yellow-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 inline mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 5.75c0-1.05.85-1.9 1.9-1.9h2.2c.85 0 1.58.55 1.83 1.36l.6 2a1.9 1.9 0 01-.46 1.88l-1.13 1.13a12.07 12.07 0 005.28 5.28l1.13-1.13a1.9 1.9 0 011.88-.46l2 0.6a1.9 1.9 0 011.36 1.83v2.2c0 1.05-.85 1.9-1.9 1.9A16.25 16.25 0 013 5.75z"
+              />
+            </svg>
+
+            <a href="https://wa.me/6287776878491">0877-7687-8491</a>
+          </p>
+          <p class="text-sm mb-2 hover:text-yellow-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 inline mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+
+            <a href="mailto:info@victoriamontessori8@gmail.com"
+              >victoriamontessori8@gmail.com</a
+            >
+          </p>
+
+          <p class="text-sm hover:text-yellow-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 inline mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <rect
+                width="20"
+                height="20"
+                x="2"
+                y="2"
+                rx="5"
+                ry="5"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+              />
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+              />
+              <line
+                x1="17.5"
+                y1="6.5"
+                x2="17.5"
+                y2="6.5"
+                stroke-width="2"
+                stroke="currentColor"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <a
+              href="https://www.instagram.com/tangerangvictoriakindergarten/"
+              target="_blank"
+              >@tangerangvictoriakindergarten</a
+            >
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-semibold text-yellow-400 mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/home/" class="hover:text-yellow-300">Home</a></li>
+            <li>
+              <a href="/profil/" class="hover:text-yellow-300"
+                >School Profile</a
+              >
+            </li>
+            <li>
+              <a href="/kegiatan/" class="hover:text-yellow-300">Activities</a>
+            </li>
+            <li>
+              <a href="/kontak/" class="hover:text-yellow-300">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center text-xs text-gray-400 mt-8">
+        &copy; 2025 TK Victoria Montessori School. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Durasi animasi
+        once: true, // Animasi hanya saat scroll pertama kali
+      });
+    </script>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

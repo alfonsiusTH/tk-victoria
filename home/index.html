@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ID">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -12,15 +12,6 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TK Victoria Montessori School - Taman Kanak-kanak Tangerang</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: "Poppins", sans-serif;
-      }
-    </style>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link
       rel="icon"
@@ -40,6 +31,7 @@
       sizes="96x96"
       type="image/png"
     />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <!-- Tailwind CSS -->
@@ -64,14 +56,34 @@
         </div>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="menuToggle" class="md:hidden focus:outline-none">
+        <button
+          id="menuToggle"
+          class="md:hidden focus:outline-none focus-visible:outline focus-visible:outline-yellow-400"
+        >
           <svg
+            id="iconHamburger"
             class="w-6 h-6 fill-current text-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
             <path
               d="M4 6h16M4 12h16M4 18h16"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <!-- Icon X -->
+          <svg
+            id="iconClose"
+            class="w-6 h-6 fill-current text-white hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 18L18 6M6 6l12 12"
               stroke="currentColor"
               stroke-width="2"
               stroke-linecap="round"
@@ -157,7 +169,7 @@
         >
           <span
             class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
-            >Activites</span
+            >Activities</span
           >
         </a>
 
@@ -184,42 +196,43 @@
         <img
           src="../assets/image/hero-tk_victoria.webp"
           alt="TK Victoria Montessori School"
-          loading="lazy"
           class="absolute inset-0 object-cover w-full h-full"
         />
 
         <!-- Overlay Warna agar teks lebih kontras -->
         <div
-          class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-yellow-400/20"
+          class="absolute inset-0 bg-gradient-to-b from-blue-900/70 to-blue-900/40"
         ></div>
 
         <!-- Teks di atas gambar -->
         <div
-          class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-6"
+          class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4 md:px-6"
         >
-          <h2
-            class="text-3xl md:text-5xl font-semibold drop-shadow-lg"
-            data-aos="fade-down"
-          >
-            WELCOME TO TK VICTORIA MONTESSORI SCHOOL
-          </h2>
-          <p
-            class="mt-4 text-lg max-w-4xl leading-relaxed drop-shadow-md"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            TK Victoria Montessori School is a kindergarten in Tangerang,
-            specifically in Modernland with a fun and creative learning method
-            for preschoolers.
-          </p>
-          <a
-            href="#"
-            class="mt-6 inline-block px-6 py-3 bg-yellow-400 text-blue-900 font-semibold rounded-lg shadow-lg hover:bg-yellow-300 transition duration-300"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-          >
-            <span>Learn More🎓</span>
-          </a>
+          <div class="p-4 md:p-8 flex flex-col items-center">
+            <h1
+              class="text-2xl md:text-5xl font-semibold drop-shadow-lg leading-snug"
+              data-aos="fade-down"
+            >
+              WELCOME TO TK VICTORIA MONTESSORI SCHOOL
+            </h1>
+            <p
+              class="mt-3 text-sm md:text-lg max-w-md md:max-w-4xl leading-relaxed drop-shadow-md"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              TK Victoria Montessori School is a kindergarten in Tangerang,
+              specifically in Modernland with a fun and creative learning method
+              for preschoolers.
+            </p>
+            <a
+              href="#"
+              class="mt-5 inline-block px-5 py-2.5 bg-yellow-400 text-blue-900 text-sm md:text-base font-semibold rounded-lg shadow-lg hover:bg-yellow-300 transition duration-300"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <span>Learn More 🎓</span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -603,6 +616,7 @@
             <a
               href="https://www.instagram.com/tangerangvictoriakindergarten/"
               target="_blank"
+              rel="noopener noreferrer"
               >@tangerangvictoriakindergarten</a
             >
           </p>
@@ -635,13 +649,6 @@
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000, // Durasi animasi
-        once: true, // Animasi hanya saat scroll pertama kali
-      });
-    </script>
-
     <script src="../assets/js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-ID">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="TK Victoria Montessori School adalah taman kanak-kanak di Tangerang tepatnya Modernland dengan metode belajar menyenangkan dan kreatif untuk anak usia dini"
+    />
+    <meta
+      name="keywords"
+      content="TK, Taman Kanak-kanak, Tangerang, Modernland, Sekolah Anak, TK Victoria Montessori School"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TK Victoria Montessori School - Taman Kanak-kanak Tangerang</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="../assets/favicon/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="../assets/favicon/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../assets/favicon/apple-touch-icon.png"
+      sizes="96x96"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-yellow-50 text-gray-800 w-full">
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full z-50 bg-blue-900 text-white shadow-md">
+      <nav
+        class="flex justify-between items-center px-6 md:px-12 py-4 md:py-6"
+        id="navbar"
+      >
+        <div class="flex items-center">
+          <a href="/home/">
+            <img
+              src="../assets/image/logo-victoria.webp"
+              class="h-16"
+              loading="lazy"
+              alt="Logo TK Victoria Montessori School"
+            />
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          id="menuToggle"
+          class="md:hidden focus:outline-none focus-visible:outline focus-visible:outline-yellow-400"
+        >
+          <svg
+            id="iconHamburger"
+            class="w-6 h-6 fill-current text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 6h16M4 12h16M4 18h16"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <!-- Icon X -->
+          <svg
+            id="iconClose"
+            class="w-6 h-6 fill-current text-white hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 18L18 6M6 6l12 12"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <!-- Desktop Menu -->
+        <div id="menu" class="hidden md:flex space-x-10 text-gray-900">
+          <a
+            href="/home/"
+            class="group relative inline-block text-white hover:text-yellow-400 transition duration-300"
+          >
+            <span
+              class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+              >Home</span
+            >
+          </a>
+
+          <a
+            href="/profil/"
+            class="group relative inline-block text-white hover:text-yellow-400 transition duration-300"
+          >
+            <span
+              class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+              >School Profile</span
+            >
+          </a>
+
+          <a
+            href="/kegiatan/"
+            class="group relative inline-block text-white hover:text-yellow-400 transition duration-300"
+          >
+            <span
+              class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+              >Activities</span
+            >
+          </a>
+
+          <a
+            href="/kontak/"
+            class="group relative inline-block text-white hover:text-yellow-400 transition duration-300"
+          >
+            <span
+              class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+              >Contact</span
+            >
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden flex-col bg-blue-900 text-white px-10 py-4 space-y-3 transition duration-300"
+      >
+        <a
+          href="/home/"
+          class="group relative block hover:text-yellow-400 transition duration-300"
+        >
+          <span
+            class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+          >
+            Home
+          </span>
+        </a>
+
+        <a
+          href="/profil/"
+          class="group relative block hover:text-yellow-400 transition duration-300"
+        >
+          <span
+            class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+          >
+            School Profile
+          </span>
+        </a>
+
+        <a
+          href="/kegiatan/"
+          class="group relative block hover:text-yellow-400 transition duration-300"
+        >
+          <span
+            class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+            >Activities</span
+          >
+        </a>
+
+        <a
+          href="/kontak/"
+          class="group relative block hover:text-yellow-400 transition duration-300"
+        >
+          <span
+            class="pb-1 border-b-2 border-transparent group-hover:border-yellow-400 transition duration-300"
+          >
+            Contact
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content Area (Empty for adding content) -->
+    <main class="pt-24 min-h-screen">
+      <!-- Content will be added here -->
+    </main>
+
+    <footer class="bg-blue-900 text-white py-10">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+        <!-- Logo & Address -->
+        <div>
+          <img
+            src="../assets/image/logo-victoria.webp"
+            alt="TK Victoria Logo"
+            class="h-12 mb-4"
+          />
+          <p class="text-sm leading-relaxed">
+            <strong>TK Victoria Montessori School</strong><br />
+            Ruko Modernland, Jl. Hartono Raya Blk. R No.2-3, RT.003/RW.001, Kec.
+            Kelapa Indah, Kota Tangerang, Banten 15117<br />
+            Indonesia
+          </p>
+        </div>
+
+        <!-- Contact Info & Social Media -->
+        <div>
+          <h3 class="font-semibold text-yellow-400 mb-3">Contact Us</h3>
+          <p class="text-sm mb-2 hover:text-yellow-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 inline mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 5.75c0-1.05.85-1.9 1.9-1.9h2.2c.85 0 1.58.55 1.83 1.36l.6 2a1.9 1.9 0 01-.46 1.88l-1.13 1.13a12.07 12.07 0 005.28 5.28l1.13-1.13a1.9 1.9 0 011.88-.46l2 0.6a1.9 1.9 0 011.36 1.83v2.2c0 1.05-.85 1.9-1.9 1.9A16.25 16.25 0 013 5.75z"
+              />
+            </svg>
+
+            <a href="https://wa.me/6287776878491">0877-7687-8491</a>
+          </p>
+          <p class="text-sm mb-2 hover:text-yellow-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 inline mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+
+            <a href="mailto:info@victoriamontessori8@gmail.com"
+              >victoriamontessori8@gmail.com</a
+            >
+          </p>
+
+          <p class="text-sm hover:text-yellow-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 inline mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <rect
+                width="20"
+                height="20"
+                x="2"
+                y="2"
+                rx="5"
+                ry="5"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+              />
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+              />
+              <line
+                x1="17.5"
+                y1="6.5"
+                x2="17.5"
+                y2="6.5"
+                stroke-width="2"
+                stroke="currentColor"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <a
+              href="https://www.instagram.com/tangerangvictoriakindergarten/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@tangerangvictoriakindergarten</a
+            >
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-semibold text-yellow-400 mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/home/" class="hover:text-yellow-300">Home</a></li>
+            <li>
+              <a href="/profil/" class="hover:text-yellow-300"
+                >School Profile</a
+              >
+            </li>
+            <li>
+              <a href="/kegiatan/" class="hover:text-yellow-300">Activities</a>
+            </li>
+            <li>
+              <a href="/kontak/" class="hover:text-yellow-300">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center text-xs text-gray-400 mt-8">
+        &copy; 2025 TK Victoria Montessori School. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

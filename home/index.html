@@ -226,6 +226,7 @@
             </p>
             <a
               href="#"
+              id="learnMoreButton"
               class="mt-5 inline-block px-5 py-2.5 bg-yellow-400 text-blue-900 text-sm md:text-base font-semibold rounded-lg shadow-lg hover:bg-pink-400 hover:text-white transition duration-300"
               data-aos="zoom-in"
               data-aos-delay="400"
@@ -237,7 +238,7 @@
       </section>
 
       <!-- Why Choose Us Section -->
-      <section class="py-16 bg-yellow-50 text-gray-800">
+      <section id="why" class="py-16 bg-yellow-50 text-gray-800">
         <div class="max-w-6xl mx-auto px-6 text-center">
           <h2
             class="text-3xl font-semibold mb-6 text-blue-800"
@@ -250,69 +251,72 @@
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            TK Victoria Montessori School provides a fun, caring, and
-            educational environment to support early childhood development.
+            We nurture not just academics but also social, emotional, and life
+            skills to prepare your child for a bright future.
           </p>
 
           <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
-            <!-- Point 1 -->
+            <!-- Child-Centered Education -->
             <div
               class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div class="text-4xl text-yellow-400 mb-4">🎓</div>
+              <div class="text-4xl text-yellow-400 mb-4">🧒</div>
               <h3 class="text-lg font-semibold text-blue-800 mb-2">
-                Montessori Method
+                Child-Centered Education
               </h3>
               <p class="text-sm text-gray-600">
-                Encouraging children to learn independently, creatively, and
-                with exploration.
+                Our Montessori method fosters independence and a love for
+                learning, empowering your child to explore at their own pace.
               </p>
             </div>
 
-            <!-- Point 2 -->
+            <!-- Holistic Development -->
             <div
               class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <div class="text-4xl text-yellow-400 mb-4">👩‍🏫</div>
+              <div class="text-4xl text-yellow-400 mb-4">🌱</div>
               <h3 class="text-lg font-semibold text-blue-800 mb-2">
-                Experienced Teachers
+                Holistic Development
               </h3>
               <p class="text-sm text-gray-600">
-                Friendly and professional teachers who care about each student.
+                We nurture academics, social, emotional, and life skills to
+                prepare your child for a bright future.
               </p>
             </div>
 
-            <!-- Point 3 -->
+            <!-- Certified Educators -->
             <div
               class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <div class="text-4xl text-yellow-400 mb-4">🏫</div>
+              <div class="text-4xl text-yellow-400 mb-4">👩‍🏫</div>
               <h3 class="text-lg font-semibold text-blue-800 mb-2">
-                Safe & Comfortable
+                Certified Educators
               </h3>
               <p class="text-sm text-gray-600">
-                A clean, safe, and child-friendly learning environment.
+                Your child will be guided by passionate, trained teachers who
+                understand their unique needs.
               </p>
             </div>
 
-            <!-- Point 4 -->
+            <!-- Hands-On Learning -->
             <div
               class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-300"
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              <div class="text-4xl text-yellow-400 mb-4">🎨</div>
+              <div class="text-4xl text-yellow-400 mb-4">👐</div>
               <h3 class="text-lg font-semibold text-blue-800 mb-2">
-                Interactive Learning
+                Hands-On Learning
               </h3>
               <p class="text-sm text-gray-600">
-                Fun activities through art, music, and hands-on experiments.
+                We emphasize experiential learning, where your child's talents
+                and interests are encouraged.
               </p>
             </div>
           </div>
@@ -705,5 +709,18 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="../assets/js/script.js"></script>
+
+    <script>
+      document
+        .getElementById("learnMoreButton")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.getElementById("why");
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        });
+    </script>
   </body>
 </html>

@@ -38,7 +38,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="bg-yellow-50 text-gray-800 w-full">
+  <body class="bg-yellow-50 text-gray-800 w-full overflow-x-hidden">
     <!-- Navbar -->
     <header class="fixed top-0 w-full z-50 bg-blue-900 text-white shadow-md">
       <nav
@@ -209,7 +209,7 @@
         >
           <div class="p-4 md:p-8 flex flex-col items-center">
             <h1
-              class="text-2xl md:text-5xl font-semibold drop-shadow-lg leading-snug"
+              class="text-2xl sm:text-3xl md:text-5xl font-semibold drop-shadow-lg leading-snug"
               data-aos="fade-down"
             >
               SCHOOL PROFILE
@@ -234,7 +234,7 @@
         </div>
 
         <div
-          class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]"
+          class="absolute -bottom-1 left-0 w-full overflow-hidden leading-[0]"
         >
           <svg
             viewBox="0 0 500 150"
@@ -250,42 +250,41 @@
       </section>
 
       <!-- History & Vision Section -->
-      <section class="py-16 bg-white">
+      <section class="relative py-16 bg-white">
         <div class="max-w-6xl mx-auto px-6">
           <h2 class="text-3xl font-semibold mb-10 text-blue-800 text-center">
             About Our School
           </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <!-- Gambar di sebelah kiri -->
-            <div
-              data-aos="fade-right"
-              class="grid grid-cols-2 gap-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2"
-            >
-              <img
-                src="../assets/image/Menanam kacang hijau dengan media kapas dan cangkang telur.webp"
-                alt="Murid-murid TK Victoria Montessori menanam kacang hijau dengan media kapas dan cangkang telur"
-                class="rounded-lg shadow-md w-full h-40 sm:h-52 md:h-56 lg:h-60 object-cover object-center"
-              />
-              <img
-                src="../assets/image/Olahraga Tk Victoria.webp"
-                alt="Murid-murid TK Victoria Montessori berolahraga di lapangan"
-                class="rounded-lg shadow-md w-full h-40 mt-5 sm:h-52 md:h-56 lg:h-60 object-cover object-center"
-              />
-              <img
-                src="../assets/image/Pengenalan Tradisi Imlek.webp"
-                alt="Pengenalan Tradisi Imlek di TK Victoria Montessori"
-                class="rounded-lg shadow-md w-full h-40 -mt-5 sm:h-52 md:h-56 lg:h-60 object-cover object-center"
-              />
-              <img
-                src="../assets/image/Cooking class.webp"
-                alt="Cooking class di TK Victoria Montessori"
-                class="rounded-lg shadow-md w-full h-40 sm:h-52 md:h-56 lg:h-60 object-cover object-center"
-              />
+            <div data-aos="fade-right">
+              <div class="grid grid-cols-2 gap-4">
+                <img
+                  src="../assets/image/Menanam kacang hijau dengan media kapas dan cangkang telur.webp"
+                  alt="Murid-murid TK Victoria Montessori menanam kacang hijau dengan media kapas dan cangkang telur"
+                  class="rounded-xl shadow-md w-full object-cover aspect-[4/3]"
+                />
+                <img
+                  src="../assets/image/Olahraga Tk Victoria.webp"
+                  alt="Murid-murid TK Victoria Montessori berolahraga di lapangan"
+                  class="rounded-xl shadow-md w-full object-cover aspect-[4/3]"
+                />
+                <img
+                  src="../assets/image/Pengenalan Tradisi Imlek.webp"
+                  alt="Pengenalan Tradisi Imlek di TK Victoria Montessori"
+                  class="rounded-xl shadow-md w-full object-cover aspect-[4/3]"
+                />
+                <img
+                  src="../assets/image/Cooking class.webp"
+                  alt="Cooking class di TK Victoria Montessori"
+                  class="rounded-xl shadow-md w-full object-cover aspect-[4/3]"
+                />
+              </div>
             </div>
 
             <!-- Teks di sebelah kanan -->
             <div data-aos="fade-left">
-              <!-- Sejarah Singkat -->
               <h3 class="text-xl font-semibold mb-3 text-yellow-400">
                 Our History
               </h3>
@@ -297,27 +296,94 @@
                 eksploratif.
               </p>
 
-              <!-- Visi & Misi -->
               <h3 class="text-xl font-semibold mb-3 text-yellow-400">
                 Vision & Mission
               </h3>
               <p class="text-gray-600 leading-relaxed">
                 <strong>Vision:</strong>
-                <span
-                  >To be a superior educational institution, with global
-                  diversity in services and learning processes through the
-                  Montessori Method.</span
-                >
+                To be a superior educational institution, with global diversity
+                in services and learning processes through the Montessori
+                Method.
               </p>
               <p class="mt-2 text-gray-600 leading-relaxed">
                 <strong>Mission:</strong>
-                <span
-                  >Growing the character of students to be superior in
-                  communicating and interacting between cultures, as well as
-                  creating an educational environment that respects culture and
-                  diversity.</span
-                >
+                Growing the character of students to be superior in
+                communicating and interacting between cultures, as well as
+                creating an educational environment that respects culture and
+                diversity.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Facilities Section -->
+      <section
+        class="relative py-16 bg-gradient-to-b from-gray-50 to-yellow-50"
+      >
+        <div class="max-w-6xl mx-auto px-6">
+          <h2
+            class="text-3xl font-semibold mb-10 text-blue-800 text-center"
+            data-aos="fade-up"
+          >
+            Facilities
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-10 items-center">
+            <img
+              src="../assets/image/fasilitas.webp"
+              alt="Fasilitas TK Victoria Montessori"
+              class="rounded-xl shadow-lg w-full h-52 md:h-64 object-cover object-center"
+              data-aos="zoom-in"
+            />
+
+            <div class="space-y-6">
+              <div
+                class="flex items-start space-x-4"
+                data-aos="fade-left"
+                data-aos-delay="100"
+              >
+                <div class="text-3xl text-yellow-400">🛝</div>
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-800">
+                    Playground
+                  </h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    A spacious and safe playground for children to play and
+                    explore.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start space-x-4"
+                data-aos="fade-left"
+                data-aos-delay="200"
+              >
+                <div class="text-3xl text-yellow-400">📚</div>
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-800">Library</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    A well-equipped library with a variety of educational books.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start space-x-4"
+                data-aos="fade-left"
+                data-aos-delay="300"
+              >
+                <div class="text-3xl text-yellow-400">🏫</div>
+                <div>
+                  <h3 class="text-lg font-semibold text-blue-800">
+                    Classrooms
+                  </h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    Comfortable and modern classrooms for interactive learning.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -325,7 +391,9 @@
     </main>
 
     <footer class="bg-blue-900 text-white py-10">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6"
+      >
         <!-- Logo & Address -->
         <div>
           <img
@@ -344,10 +412,11 @@
         <!-- Contact Info & Social Media -->
         <div>
           <h3 class="font-semibold text-yellow-400 mb-3">Contact Us</h3>
-          <p class="text-sm mb-2 hover:text-yellow-300">
+
+          <div class="flex items-center text-sm mb-2 hover:text-yellow-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 inline mr-2"
+              class="w-5 h-5 mr-2 flex-shrink-0"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -361,11 +430,12 @@
             </svg>
 
             <a href="https://wa.me/6287776878491">0877-7687-8491</a>
-          </p>
-          <p class="text-sm mb-2 hover:text-yellow-300">
+          </div>
+
+          <div class="flex items-center text-sm mb-2 hover:text-yellow-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 inline mr-2"
+              class="w-5 h-5 mr-2 flex-shrink-0"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -381,12 +451,12 @@
             <a href="mailto:info@victoriamontessori8@gmail.com"
               >victoriamontessori8@gmail.com</a
             >
-          </p>
+          </div>
 
-          <p class="text-sm hover:text-yellow-300">
+          <div class="flex items-center text-sm mb-2 hover:text-yellow-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 inline mr-2"
+              class="w-5 h-5 inline mr-2 flex-shrink-0"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -425,7 +495,7 @@
               rel="noopener noreferrer"
               >@tangerangvictoriakindergarten</a
             >
-          </p>
+          </div>
         </div>
 
         <!-- Quick Links -->

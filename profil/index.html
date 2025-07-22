@@ -751,23 +751,6 @@
         });
 
       history.scrollRestoration = "manual";
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const detailsElements = document.querySelectorAll("section details");
-
-        detailsElements.forEach((targetDetail) => {
-          targetDetail.addEventListener("toggle", () => {
-            if (targetDetail.open) {
-              // Tutup semua details lain
-              detailsElements.forEach((detail) => {
-                if (detail !== targetDetail && detail.open) {
-                  detail.open = false;
-                }
-              });
-            }
-          });
-        });
-      });
     </script>
   </body>
 </html>

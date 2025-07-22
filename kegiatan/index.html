@@ -37,7 +37,7 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-yellow-50 text-gray-800 w-full">
+  <body class="bg-yellow-50 text-gray-800 w-full overflow-x-hidden">
     <!-- Navbar -->
     <header class="fixed top-0 w-full z-50 bg-blue-900 text-white shadow-md">
       <nav
@@ -186,9 +186,304 @@
       </div>
     </header>
 
-    <!-- Main Content Area (Empty for adding content) -->
-    <main class="pt-24 min-h-screen">
-      <!-- Content will be added here -->
+    <!-- Main Content -->
+    <main class="pt-24 min-h-screen bg-white">
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-screen flex items-center justify-center bg-cover bg-center"
+        style="
+          background-image: url('../assets/image/web-image/Edukasi\ Biota\ Laut\ ke\ BXSEA\ Bintaro\ Tangsel.webp');
+        "
+      >
+        <!-- Overlay -->
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-blue-900/70 to-blue-900/40"
+        ></div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center text-white px-4 md:px-6">
+          <h1
+            class="text-3xl md:text-5xl font-bold drop-shadow-lg"
+            data-aos="fade-down"
+          >
+            OUR ACTIVITIES
+          </h1>
+          <p
+            class="mt-3 text-sm md:text-lg max-w-md md:max-w-4xl leading-relaxed drop-shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Explore the enriching daily activities and special events at TK
+            Victoria Montessori School that nurture creativity, curiosity, and
+            character in every child.
+          </p>
+          <a
+            id="learnMoreButton"
+            href="javascript:void(0)"
+            class="mt-6 inline-block bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg shadow-lg hover:bg-pink-400 hover:text-white transition duration-300"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            Learn More 🎓
+          </a>
+        </div>
+
+        <!-- Wave Separator -->
+        <div
+          class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]"
+        >
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            class="w-full h-24"
+          >
+            <path
+              d="M0.00,49.98 C150.00,150.00 349.15,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+              fill="#ffffff"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- Daily Activities Section -->
+      <section id="dailyActivities" class="max-w-6xl mx-auto py-16 px-6">
+        <h2
+          class="text-3xl font-semibold text-center text-blue-800 mb-12"
+          data-aos="fade-up"
+        >
+          Daily Activities
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div data-aos="zoom-in">
+            <img
+              src="../assets/image/web-image/Kegiatan Harian Anak.webp"
+              alt="Daily Activities at TK Victoria"
+              class="w-full rounded-xl shadow-lg object-cover sm:aspect-[4/3] md:aspect-[3/2]"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="space-y-6" data-aos="fade-left">
+            <div class="flex items-start space-x-4">
+              <div class="text-4xl text-yellow-400">🎨</div>
+              <div>
+                <h3 class="text-xl font-semibold text-blue-800">
+                  Art & Creativity
+                </h3>
+                <p class="text-gray-700 leading-relaxed text-sm">
+                  Children learn to paint, color, and create crafts to stimulate
+                  imagination and fine motor skills.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="text-4xl text-yellow-400">📚</div>
+              <div>
+                <h3 class="text-xl font-semibold text-blue-800">Story Time</h3>
+                <p class="text-gray-700 leading-relaxed text-sm">
+                  Teachers read inspiring stories to improve language skills and
+                  build character.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="text-4xl text-yellow-400">🧩</div>
+              <div>
+                <h3 class="text-xl font-semibold text-blue-800">
+                  Montessori Play
+                </h3>
+                <p class="text-gray-700 leading-relaxed text-sm">
+                  Montessori activities such as pouring, buttoning, and
+                  organizing help children learn independence.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="text-4xl text-yellow-400">🌱</div>
+              <div>
+                <h3 class="text-xl font-semibold text-blue-800">
+                  Gardening Time
+                </h3>
+                <p class="text-gray-700 leading-relaxed text-sm">
+                  Children learn to plant mung beans, water the plants, and
+                  observe the natural growth process.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Special Events Section -->
+      <section class="bg-gradient-to-b from-white to-yellow-50 py-16 px-6">
+        <h2
+          class="text-3xl font-semibold text-center text-blue-800 mb-12"
+          data-aos="fade-up"
+        >
+          Special Events & Moments
+        </h2>
+
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 md:px-6"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div
+            class="bg-yellow-100 rounded-xl p-5 shadow-md flex flex-col items-center text-center"
+          >
+            <img
+              src="../assets/image/web-image/Hari Kartini.webp"
+              alt="Perayaan Hari Kartini di TK Victoria Montessori School"
+              loading="lazy"
+              class="rounded-lg mb-4 w-full aspect-[4/3] object-cover"
+            />
+            <h3 class="text-lg font-semibold text-blue-800 mb-2">
+              Kartini Day Celebration
+            </h3>
+            <p class="text-gray-700 text-sm">
+              Children wear traditional costumes and learn about national
+              heroes.
+            </p>
+          </div>
+
+          <div
+            class="bg-yellow-100 rounded-xl p-5 shadow-md flex flex-col items-center text-center"
+          >
+            <img
+              src="../assets/image/web-image/Fieldtrip ke Scientia Square Park - Gading Serpong.webp"
+              alt="Field Trip ke Scientia Square Park - Gading Serpong"
+              loading="lazy"
+              class="rounded-lg mb-4 w-full aspect-[4/3] object-cover"
+            />
+            <h3 class="text-lg font-semibold text-blue-800 mb-2">Field Trip</h3>
+            <p class="text-gray-700 text-sm">
+              Educational visits to explore and understand the real world more
+              closely.
+            </p>
+          </div>
+
+          <div
+            class="bg-yellow-100 rounded-xl p-5 shadow-md flex flex-col items-center text-center"
+          >
+            <img
+              src="../assets/image/web-image/Edukasi Biota Laut ke BXSEA Bintaro Tangsel.webp"
+              alt="Edukasi Biota Laut ke BXSEA Bintaro Tangerang Selatan"
+              loading="lazy"
+              class="rounded-lg mb-4 w-full aspect-[4/3] object-cover"
+            />
+            <h3 class="text-lg font-semibold text-blue-800 mb-2">
+              Marine Life Education
+            </h3>
+            <p class="text-gray-700 text-sm">
+              Children learn about marine life by directly observing sea
+              creatures at BXSEA.
+            </p>
+          </div>
+
+          <div
+            class="bg-yellow-100 rounded-xl p-5 shadow-md flex flex-col items-center text-center"
+          >
+            <img
+              src="../assets/image/web-image/Pengenalan Tradisi Imlek.webp"
+              alt="Pengenalan Tradisi Imlek di TK Victoria Montessori School"
+              loading="lazy"
+              class="rounded-lg mb-4 w-full aspect-[4/3] object-cover"
+            />
+            <h3 class="text-lg font-semibold text-blue-800 mb-2">
+              Imlek Tradition Introduction
+            </h3>
+            <p class="text-gray-700 text-sm">
+              Children learn about the culture and traditions of Imlek through
+              fun activities.
+            </p>
+          </div>
+
+          <div
+            class="bg-yellow-100 rounded-xl p-5 shadow-md flex flex-col items-center text-center"
+          >
+            <img
+              src="../assets/image/web-image/Edukasi alat transportasi umum - Kereta Api Poris - Bandara.webp"
+              alt="Edukasi Alat Transportasi Umum - Kereta Api Poris - Bandara"
+              loading="lazy"
+              class="rounded-lg mb-4 w-full aspect-[4/3] object-cover"
+            />
+            <h3 class="text-lg font-semibold text-blue-800 mb-2">
+              Public Transport Education
+            </h3>
+            <p class="text-gray-700 text-sm">
+              Children learn about public transportation by taking a train ride
+              from Poris to the airport.
+            </p>
+          </div>
+
+          <div
+            class="bg-yellow-100 rounded-xl p-5 shadow-md flex flex-col items-center text-center"
+          >
+            <img
+              src="../assets/image/web-image/Edukasi Profesi Polisi oleh Satuan Polres Metro Tangerang.webp"
+              alt="Edukasi Profesi Polisi oleh Satuan Polres Metro Tangerang"
+              loading="lazy"
+              class="rounded-lg mb-4 w-full aspect-[4/3] object-cover"
+            />
+            <h3 class="text-lg font-semibold text-blue-800 mb-2">
+              Police Profession Education
+            </h3>
+            <p class="text-gray-700 text-sm">
+              Children learn about the role of police officers in maintaining
+              security and order in society.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section
+        class="bg-gradient-to-b from-yellow-50 to-white py-12 md:py-16 text-blue-900"
+      >
+        <div
+          class="max-w-6xl mx-auto px-4 md:flex md:items-center md:justify-between gap-8"
+        >
+          <!-- Ornamen kiri -->
+          <div class="hidden md:block opacity-10" data-aos="fade-right">
+            <img
+              src="../assets/image/icon/star-svgrepo-com.svg"
+              alt="Star Icon"
+              class="w-14 h-14"
+            />
+          </div>
+
+          <!-- Konten tengah -->
+          <div class="text-center flex-1">
+            <div class="text-4xl md:text-5xl mb-4">🌈</div>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-3 leading-snug">
+              Let's Grow Together!
+            </h2>
+            <p class="text-base md:text-lg text-blue-800 mb-6">
+              Join Victoria Montessori School for a joyful and meaningful early
+              learning journey.
+            </p>
+            <a
+              href="/kontak/"
+              class="bg-yellow-300 text-blue-900 px-6 py-3 rounded-xl shadow-md hover:bg-pink-300 hover:text-white transition duration-300"
+            >
+              Contact Us Today 📞
+            </a>
+          </div>
+
+          <!-- Ornamen kanan -->
+          <div class="hidden md:block opacity-10" data-aos="fade-left">
+            <img
+              src="../assets/image/icon/book-education-idea-learning-school-study-svgrepo-com.svg"
+              alt="Book Icon"
+              class="w-16 h-16"
+            />
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-blue-900 text-white py-10">
@@ -372,5 +667,20 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="../assets/js/script.js"></script>
+
+    <script>
+      document
+        .getElementById("learnMoreButton")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.getElementById("dailyActivities");
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        });
+
+      history.scrollRestoration = "manual";
+    </script>
   </body>
 </html>
